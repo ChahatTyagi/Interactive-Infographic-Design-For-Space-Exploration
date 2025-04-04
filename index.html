@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Journey: Space Exploration Infographic</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="stars-container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <header class="header">
+        <div class="header-content">
+            <h1 class="title">COSMIC JOURNEY</h1>
+            <p class="subtitle">The Evolution of Space Exploration</p>
+            <div class="scroll-indicator">
+                <p>Scroll to explore</p>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="timeline-container">
+        <section id="era1" class="era">
+            <div class="era-content">
+                <h2 class="era-title">The Space Race Begins</h2>
+                <div class="era-year">1957-1969</div>
+                <div class="era-body">
+                    <div class="infographic-element" id="sputnik">
+                        <div class="infographic-dot"></div>
+                        <h3>Sputnik 1</h3>
+                        <p>The world's first artificial satellite, launched by the Soviet Union on October 4, 1957.</p>
+                        <div class="tooltip">
+                            <h3>Sputnik 1</h3>
+                            <p>The world's first artificial satellite, launched by the Soviet Union on October 4, 1957. This beach ball-sized satellite orbited Earth for 3 weeks, transmitting radio signals that could be detected by amateur radio operators worldwide, demonstrating Soviet technological capability and triggering the Space Race with the United States.</p>
+                            <div class="tooltip-image"></div>
+                        </div>
+                    </div>
+                    <div class="infographic-element" id="gagarin">
+                        <div class="infographic-dot"></div>
+                        <h3>Yuri Gagarin</h3>
+                        <p>First human in space aboard Vostok 1 on April 12, 1961.</p>
+                        <div class="tooltip">
+                            <h3>Yuri Gagarin</h3>
+                            <p>First human in space aboard Vostok 1 on April 12, 1961. His historic 108-minute flight made one complete orbit around Earth, reaching an altitude of 327 km. Gagarin instantly became a worldwide celebrity and a national hero in the Soviet Union, where he was awarded the nation's highest honor, Hero of the Soviet Union.</p>
+                            <div class="tooltip-image"></div>
+                        </div>
+                    </div>
+                    <div class="infographic-element" id="apollo">
+                        <div class="infographic-dot"></div>
+                        <h3>Apollo 11</h3>
+                        <p>"One small step for man, one giant leap for mankind." Neil Armstrong becomes the first human to walk on the Moon on July 20, 1969.</p>
+                        <div class="tooltip">
+                            <h3>Apollo 11</h3>
+                            <p>"One small step for man, one giant leap for mankind." Neil Armstrong and Buzz Aldrin landed the Eagle lunar module in the Sea of Tranquility, while Michael Collins orbited above in the command module. The mission fulfilled President Kennedy's goal of landing humans on the Moon and returning them safely before the end of the 1960s.</p>
+                            <div class="tooltip-image"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="era-visual">
+                <div class="rocket-animation">
+                    <div class="rocket"></div>
+                    <div class="rocket-trail"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="era2" class="era">
+            <div class="era-content">
+                <h2 class="era-title">Space Stations & Shuttles</h2>
+                <div class="era-year">1970-2000</div>
+                <div class="era-body">
+                    <div class="infographic-element" id="skylab">
+                        <div class="infographic-dot"></div>
+                        <h3>Skylab</h3>
+                        <p>America's first space station, operated from 1973 to 1979.</p>
+                        <div class="tooltip">
+                            <h3>Skylab</h3>
+                            <p>America's first space station, operated from 1973 to 1979. Launched by a modified Saturn V rocket, Skylab hosted three crews for extended stays in space. Scientists conducted various experiments in Earth observation, solar astronomy, microgravity, and human adaptation to spaceflight. Its reentry in 1979 created worldwide attention as debris scattered across the Indian Ocean and Australia.</p>
+                            <div class="tooltip-image"></div>
+                        </div>
+                    </div>
+                    <div class="infographic-element" id="shuttle">
+                        <div class="infographic-dot"></div>
+                        <h3>Space Shuttle</h3>
+                        <p>The world's first reusable spacecraft, operational from 1981 to 2011.</p>
+                        <div class="tooltip">
+                            <h3>Space Shuttle</h3>
+                            <p>The world's first reusable spacecraft, operational from 1981 to 2011. The shuttle fleet (Columbia, Challenger, Discovery, Atlantis, and Endeavour) completed 135 missions, deployed satellites, conducted scientific research, and helped build the International Space Station. Despite two tragic accidents (Challenger in 1986 and Columbia in 2003), the program revolutionized human spaceflight.</p>
+                            <div class="tooltip-image"></div>
+                        </div>
+                    </div>
+                    <div class="infographic-element" id="mir">
+                        <div class="infographic-dot"></div>
+                        <h3>Mir Space Station</h3>
+                        <p>The first modular space station, assembled in orbit from 1986 to 1996.</p>
+                        <div class="tooltip">
+                            <h3>Mir Space Station</h3>
+                            <p>The first modular space station, assembled in orbit from 1986 to 1996. Mir remained operational until 2001, setting records for the longest continuous human presence in space (3,644 days) and longest single human spaceflight (Valeri Polyakov, 437 days). It hosted astronauts from 12 different countries and pioneered international cooperation in space that would later be expanded with the International Space Station.</p>
+                            <div class="tooltip-image"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="era-visual">
+                <div class="station-animation">
+                    <div class="space-station"></div>
+                    <div class="earth"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="era3" class="era">
+            <div class="era-content">
+                <h2 class="era-title">International Cooperation</h2>
+                <div class="era-year">2000-2020</div>
+                <div class="era-body">
+                    <div class="infographic-element" id="iss">
+                        <div class="infographic-dot"></div>
+                        <h3>International Space Station</h3>
+                        <p>The largest modular space station in low Earth orbit, continuously inhabited since 2000.</p>
+                        <div class="tooltip">
+                            <h3>International Space Station</h3>
+                            <p>The largest modular space station in low Earth orbit, continuously inhabited since November 2000. A joint project involving five space agencies (NASA, Roscosmos, JAXA, ESA, and CSA), the ISS serves as a microgravity and space environment research laboratory. More than 240 individuals from 19 countries have visited the station, conducting over 3,000 scientific research investigations.</p>
+                            <div class="tooltip-image"></div>
+                        </div>
+                    </div>
+                    <div class="infographic-element" id="hubble">
+                        <div class="infographic-dot"></div>
+                        <h3>Hubble Space Telescope</h3>
+                        <p>Launched in 1990, revolutionized astronomy with its deep space images.</p>
+                        <div class="tooltip">
+                            <h3>Hubble Space Telescope</h3>
+                            <p>Launched in 1990, revolutionized astronomy with its deep space images. After an initial flaw was corrected during a shuttle servicing mission, Hubble has provided spectacular images of distant galaxies, nebulae, and other cosmic phenomena. Its observations have helped determine the age of the universe, identify exoplanets, and study dark energy and dark matter, fundamentally changing our understanding of the cosmos.</p>
+                            <div class="tooltip-image"></div>
+                        </div>
+                    </div>
+                    <div class="infographic-element" id="rovers">
+                        <div class="infographic-dot"></div>
+                        <h3>Mars Rovers</h3>
+                        <p>Spirit, Opportunity, Curiosity, and Perseverance have explored the Martian surface since 2004.</p>
+                        <div class="tooltip">
+                            <h3>Mars Rovers</h3>
+                            <p>Spirit, Opportunity, Curiosity, and Perseverance have explored the Martian surface since 2004. These robotic geologists have analyzed rocks, soil, and atmosphere, searching for signs of past water activity and potential microbial life. Opportunity set a longevity record, operating for 14 years, while Curiosity discovered organic molecules and Perseverance is collecting samples for future return to Earth.</p>
+                            <div class="tooltip-image"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="era-visual">
+                <div class="iss-animation">
+                    <div class="iss-model"></div>
+                    <div class="solar-panels left"></div>
+                    <div class="solar-panels right"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="era4" class="era">
+            <div class="era-content">
+                <h2 class="era-title">The New Space Age</h2>
+                <div class="era-year">2020-Present</div>
+                <div class="era-body">
+                    <div class="infographic-element" id="commercial">
+                        <div class="infographic-dot"></div>
+                        <h3>Commercial Space Flight</h3>
+                        <p>SpaceX, Blue Origin, and Virgin Galactic pioneering private space travel.</p>
+                        <div class="tooltip">
+                            <h3>Commercial Space Flight</h3>
+                            <p>SpaceX, Blue Origin, and Virgin Galactic pioneering private space travel. These companies have dramatically reduced launch costs through innovations like reusable rockets (SpaceX's Falcon 9) and new business models. SpaceX's Crew Dragon has transported astronauts to the ISS, while Blue Origin and Virgin Galactic have begun suborbital tourist flights, marking the beginning of a new era of commercial space travel.</p>
+                            <div class="tooltip-image"></div>
+                        </div>
+                    </div>
+                    <div class="infographic-element" id="artemis">
+                        <div class="infographic-dot"></div>
+                        <h3>Artemis Program</h3>
+                        <p>NASA's plan to return humans to the Moon by 2025 and establish sustainable lunar exploration.</p>
+                        <div class="tooltip">
+                            <h3>Artemis Program</h3>
+                            <p>NASA's plan to return humans to the Moon by 2025 and establish sustainable lunar exploration. Named after Apollo's twin sister in Greek mythology, Artemis will land the first woman and first person of color on the Moon. The program involves the Space Launch System (SLS) rocket, Orion spacecraft, Gateway lunar outpost, and commercial lunar landers. It aims to establish a long-term presence on the Moon as a stepping stone to Mars.</p>
+                            <div class="tooltip-image"></div>
+                        </div>
+                    </div>
+                    <div class="infographic-element" id="mars">
+                        <div class="infographic-dot"></div>
+                        <h3>Mars Colonization</h3>
+                        <p>Plans to send the first humans to Mars by the 2030s.</p>
+                        <div class="tooltip">
+                            <h3>Mars Colonization</h3>
+                            <p>Plans to send the first humans to Mars by the 2030s. Both government agencies and private companies like SpaceX have proposed missions to establish a human presence on the Red Planet. Challenges include radiation exposure during the journey, landing heavy payloads safely, producing food and oxygen on Mars, and protecting astronauts from the harsh Martian environment. Despite these obstacles, Mars remains humanity's next great frontier.</p>
+                            <div class="tooltip-image"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="era-visual">
+                <div class="future-animation">
+                    <div class="mars-base"></div>
+                    <div class="astronaut"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="data-counter">
+            <div class="counter-item">
+                <div id="satellites-counter" class="counter">0</div>
+                <div class="counter-label">Satellites in Orbit</div>
+            </div>
+            <div class="counter-item">
+                <div id="astronauts-counter" class="counter">0</div>
+                <div class="counter-label">Humans who've been to Space</div>
+            </div>
+            <div class="counter-item">
+                <div id="missions-counter" class="counter">0</div>
+                <div class="counter-label">Space Missions</div>
+            </div>
+        </div>
+        <p class="credits">© 2023 Cosmic Journey Interactive Infographic</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
